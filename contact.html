@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Please Sign Up</title>
+<meta name="keywords" content="rental management system" />
+<meta name="description" content="Rental Management Systemby Raz" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="gallery_style.css" />
+<script src="script1.js" defer></script>
+</head>
+<body>
+<div id="templatemo_container">
+<div id="templatemo_top_panel">
+	<div id="templatemo_header_section">
+		<div id="templatemo_header">
+        	Raz's Rental 
+        </div>
+    </div> <!-- end of header section -->
+    
+    <div id="templatemo_menu_login_section">
+    	<div id="templatemo_menu_section">
+        	<div id="templatemo_menu_panel">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html" class="current">Sign Up</a></li>
+                    <li><a href="login.html">Log In</a></li>                   
+                </ul> 
+            </div> <!-- end of menu -->
+        </div>
+        
+    </div> 
+</div> <!-- end of top panel -->
+
+<div id="templatemo_gallery_panel">
+<div id="gallery">
+  <div id="imagearea">
+    <div id="image">
+      <a href="javascript:slideShow.nav(-1)" class="imgnav " id="previmg"></a>
+      <a href="javascript:slideShow.nav(1)" class="imgnav " id="nextimg"></a>
+    </div>
+  </div>
+  <div id="thumbwrapper">
+    <div id="thumbarea">
+      <ul id="thumbs">
+        <li value="1"><img src="images/thumbs/1.jpg" width="179" height="100" alt="" /></li>
+        <li value="2"><img src="images/thumbs/2.jpg" width="179" height="100" alt="" /></li>
+        <li value="3"><img src="images/thumbs/3.jpg" width="179" height="100" alt="" /></li>
+        <li value="4"><img src="images/thumbs/4.jpg" width="179" height="100" alt="" /></li>
+        <li value="5"><img src="images/thumbs/5.jpg" width="179" height="100" alt="" /></li>
+        <li value="3"><img src="images/thumbs/3.jpg" width="179" height="100" alt="" /></li>
+        <li value="4"><img src="images/thumbs/4.jpg" width="179" height="100" alt="" /></li>
+        <li value="5"><img src="images/thumbs/5.jpg" width="179" height="100" alt="" /></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+var imgid = 'image';
+var imgdir = 'images/fullsize';
+var imgext = '.jpg';
+var thumbid = 'thumbs';
+var auto = true;
+var autodelay = 5;
+</script>
+<script type="text/javascript" src="slide.js"></script>
+
+</div>
+<div></div>
+
+<div id="templatemo_content_panel_1">
+
+ 
+      
+
+
+	<form method = "post" action="register.php" class="appear" class=>
+        <p><label >First Name: <br>
+            <input name="fname" type="text" size="10" required="true" >
+        </label>
+        <p><label>Last Name: <br>
+            <input name="lname" type="text" size="10" required="true">
+        </label></p>
+        <p><label>Contact: <br> 
+            <input name="contact" type="tel" size="10" length="10" required="true">
+        </label></p>
+        <p><label>Email Address: <br>
+            <input name="email" type="email" required="true">
+        </label></p>
+        <p><label>Password: <br>
+            <input name="password1" id="password1" type="password" size="15" required="true">
+        </label></p>
+        <p><label>Verify Password: <br>
+            <input name="password2" id="password2" type="password" size="15" required="true" ondragleave="check_password();">
+        </label></p>
+        <input type="submit" value="Sign Up" onsubmit="check_password();">
+        <input type="reset" value="Clear">
+            </form>
+            </div>
+<div id="templatemo_footer_panel">
+    Copyright © 2019 <a href="index.html">Group 13</a> </div>
+</body>
+
+</html>
