@@ -1,4 +1,5 @@
 <?php
+ob_start();  //deals with header files sent to server( using buffer)
 session_start();
 include "connection.php";
 if(isset($_SESSION['email'])){
